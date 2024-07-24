@@ -317,10 +317,10 @@ class GameCanvas
             mV = 21;
             upA = false;
         }
-        int i = 28 + (Bobble.CO[mV] << 4)*2 / 1000 + -4;
-        int j = 84 + (Bobble.SI[mV] << 4)*2 / 1000 + -4;
-        k = 28 + (Bobble.CO[(21 - mV) + 21] * 42) / 1000 + -4;
-        int i1 = 84 + (Bobble.SI[(21 - mV) + 21] * -42) / 1000 + -4;
+        int i = 28 + (Bobble.CO[mV] << 4) / 1000 + -4;
+        int j = 84 + (Bobble.SI[mV] << 4) / 1000 + -4;
+        k = 28 + (Bobble.CO[(21 - mV) + 21] * 8) / 1000 + -4;
+        int i1 = 84 + (Bobble.SI[(21 - mV) + 21] * -8) / 1000 + -4;
         g.setColor(255, 255, 0);
         g.drawLine(i, j, k, i1);
         g.drawLine(i, j, ARW1[mV][0] + -4, ARW1[mV][1] + -4);
